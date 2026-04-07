@@ -1,0 +1,10 @@
+# Training & activity explanation docs
+docs/
+
+# Compiled JS output
+*.js
+
+# Node
+node_modules/
+
+.claude
