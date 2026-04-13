@@ -1,0 +1,26 @@
+{
+  "name": "abril",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "compile": "find ejercicios -name 'ejercicio*.ts' | sort -V | while read f; do npx tsc --types node \"$f\"; done",
+    "start": "find ejercicios -name 'ejercicio*.js' | sort -V | while read f; do echo \"--- $f ---\" && node \"$f\"; done",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-nubiru:Nubiru/OOP_estudios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.2"
+  }
+}
