@@ -1,8 +1,13 @@
 // Ejercicio 39: mejora del ejercicio 37 usando "else"
-let primero39: number = 6;   // Simula entrada del usuario
-let segundo39: number = 8;   // Simula segunda entrada del usuario
-if (primero39 == 0) {
-    console.log("El producto de 0 por cualquier numero es 0");
-} else {
-    console.log(`El producto de ${primero39} y ${segundo39} es: ${primero39 * segundo39}`);
+function multiplicar39(primero: number, segundo: number): void {
+    if (primero == 0) {
+        console.log("El producto de 0 por cualquier numero es 0");
+    } else {
+        console.log(`El producto de ${primero} y ${segundo} es: ${primero * segundo}`);
+    }
 }
+
+multiplicar39(6, 8);  // Simula entrada del usuario
+
+// Con else, si la primera condicion es verdadera ya no evalua la segunda.
+// Es mas eficiente y claro que usar dos if separados como en el ej. 37.

@@ -1,9 +1,9 @@
 // Ejercicio 34: decir cual de dos numeros es el mayor
-let a34: number = 12;  // Simula entrada del usuario
-let b34: number = 27;  // Simula entrada del usuario
-if (a34 > b34) {
-    console.log(`El mayor es ${a34}`);
+function mayor34(a: number, b: number): number {
+    if (a > b) return a;
+    return b;
 }
-if (b34 > a34) {
-    console.log(`El mayor es ${b34}`);
-}
+
+let a: number = 12;  // Simula entrada del usuario
+let b: number = 27;
+console.log(`El mayor es ${mayor34(a, b)}`);

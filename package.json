@@ -8,7 +8,11 @@
   },
   "scripts": {
     "compile": "find ejercicios -name 'ejercicio*.ts' | sort -V | while read f; do npx tsc --types node \"$f\"; done",
-    "start": "find ejercicios -name 'ejercicio*.js' | sort -V | while read f; do echo \"--- $f ---\" && node \"$f\"; done",
+    "start": "npm run start:01 && npm run start:21 && npm run start:41 && npm run start:61",
+    "start:01": "find ejercicios/01-20 -name 'ejercicio*.js' | sort -V | while read f; do echo \"--- $f ---\" && node \"$f\"; done",
+    "start:21": "find ejercicios/21-40 -name 'ejercicio*.js' | sort -V | while read f; do echo \"--- $f ---\" && node \"$f\"; done",
+    "start:41": "find ejercicios/41-60 -name 'ejercicio*.js' | sort -V | while read f; do echo \"--- $f ---\" && node \"$f\"; done",
+    "start:61": "find ejercicios/61-80 -name 'ejercicio*.js' | sort -V | while read f; do echo \"--- $f ---\" && node \"$f\"; done",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

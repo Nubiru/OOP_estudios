@@ -1,8 +1,15 @@
 // Ejercicio 60: repetir el ejercicio 57 pero con if en vez de switch
-let numero60: number = 4;  // Simula entrada del usuario
-if (numero60 == 1) console.log("uno");
-else if (numero60 == 2) console.log("dos");
-else if (numero60 == 3) console.log("tres");
-else if (numero60 == 4) console.log("cuatro");
-else if (numero60 == 5) console.log("cinco");
-else console.log("fuera de rango");
+function numeroATextoIf(n: number): string {
+    if (n == 1) return "uno";
+    if (n == 2) return "dos";
+    if (n == 3) return "tres";
+    if (n == 4) return "cuatro";
+    if (n == 5) return "cinco";
+    return "fuera de rango";
+}
+
+console.log(numeroATextoIf(4));  // Simula entrada del usuario
+
+// Misma logica que el ejercicio 57 pero con if en vez de switch.
+// Cada if comprueba un valor. Si coincide, retorna el texto y sale.
+// El return final (sin if) hace de "default".

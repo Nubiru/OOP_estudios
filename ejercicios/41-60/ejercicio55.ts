@@ -1,4 +1,11 @@
 // Ejercicio 55: valor absoluto usando el operador condicional (ternario)
-let n55: number = -7;  // Simula entrada del usuario
-let abs: number = (n55 >= 0) ? n55 : -n55;
-console.log(`El valor absoluto de ${n55} es ${abs}`);
+function valorAbsoluto(n: number): number {
+    return (n >= 0) ? n : -n;
+}
+
+let num: number = -7;  // Simula entrada del usuario
+console.log(`El valor absoluto de ${num} es ${valorAbsoluto(num)}`);
+
+// Operador ternario: (condicion) ? valorSiTrue : valorSiFalse
+// Si n >= 0, lo devuelve tal cual. Si es negativo, le cambia el signo con -n.
+// Ejemplo: -7 -> -(-7) = 7.

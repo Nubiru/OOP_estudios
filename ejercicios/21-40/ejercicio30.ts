@@ -1,6 +1,11 @@
-// Ejercicio 30: tabla de multiplicar usando el estilo {0}, {1}, {2}
-// En TypeScript usamos template literals con ${} como equivalente.
-let numero30: number = 3;  // Simula entrada del usuario
-for (let i: number = 0; i <= 10; i++) {
-    console.log(`${numero30} x ${i} = ${numero30 * i}`);
+// Ejercicio 30: tabla de multiplicar usando template literals
+function tablaMultiplicar(n: number): void {
+    for (let i: number = 0; i <= 10; i++) {
+        console.log(`${n} x ${i} = ${n * i}`);
+    }
 }
+
+tablaMultiplicar(3);  // Simula entrada del usuario
+
+// void: la funcion no retorna nada, solo imprime.
+// El for recorre i de 0 a 10. En cada vuelta imprime una linea de la tabla.

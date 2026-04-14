@@ -1,6 +1,9 @@
 // Ejercicio 29: mostrar (a+b)*(a-b) y a^2 - b^2 en la misma linea
-let a29: number = 8;  // Simula entrada del usuario
-let b29: number = 3;  // Simula entrada del usuario
-let r1: number = (a29 + b29) * (a29 - b29);
-let r2: number = a29 * a29 - b29 * b29;
-console.log(`(a+b)*(a-b) = ${r1}, a^2 - b^2 = ${r2}`);
+function operacion29(a: number, b: number): { r1: number; r2: number } {
+    return { r1: (a + b) * (a - b), r2: a * a - b * b };
+}
+
+let a: number = 8;  // Simula entrada del usuario
+let b: number = 3;
+let res = operacion29(a, b);
+console.log(`(a+b)*(a-b) = ${res.r1}, a^2 - b^2 = ${res.r2}`);
