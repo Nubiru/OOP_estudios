@@ -4,6 +4,9 @@ docs/
 # Compiled JS output
 *.js
 
+# Excepcion: codigo fuente JavaScript de los ejercicios de POO en JS
+!poo-javascript/*.js
+
 # Node
 node_modules/
 

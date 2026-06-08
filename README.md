@@ -59,6 +59,7 @@ abril/
 │   ├── 21-40/          Ejercicios 21 al 40
 │   ├── 41-60/          Ejercicios 41 al 60
 │   └── 61-80/          Ejercicios 61 al 70 (en progreso)
+├── poo-javascript/     Ejercicios de POO en JavaScript (Niveles 1-5) + preguntas
 ├── docs/               Documentacion interna (ignorada por git)
 ├── package.json        Scripts y dependencias
 └── README.md           Este archivo
@@ -66,3 +67,10 @@ abril/
 
 Los scripts `npm run compile` y `npm run start` recorren todas las subcarpetas
 automaticamente.
+
+## POO en JavaScript
+
+Aparte de los ejercicios en TypeScript, la carpeta [`poo-javascript/`](poo-javascript/)
+contiene los ejercicios de POO en **JavaScript** (Niveles 1 al 5: objetos, funciones
+constructoras, prototipos, herencia con clases ES6 y encapsulacion) junto con las
+respuestas a las preguntas de estudio. Ver su propio `README.md` para detalles.
