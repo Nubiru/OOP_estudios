@@ -58,7 +58,7 @@ abril/
 │   ├── 01-20/          Ejercicios 1 al 20 (incluye ejercicio01_1 con HTML)
 │   ├── 21-40/          Ejercicios 21 al 40
 │   ├── 41-60/          Ejercicios 41 al 60
-│   └── 61-80/          Ejercicios 61 al 70 (en progreso)
+│   └── 61-80/          Ejercicios 61 al 70
 ├── poo-javascript/     Ejercicios de POO en JavaScript (Niveles 1-5) + preguntas
 ├── docs/               Documentacion interna (ignorada por git)
 ├── package.json        Scripts y dependencias
